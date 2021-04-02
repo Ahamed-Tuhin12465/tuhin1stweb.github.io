@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Gym Website</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        body{
+            background: url("img.jpg");
+            color: white;
+            height: 1250px;
+        }
+        .left{
+            /* border: 2px solid red; */
+            display: inline-block;
+            top: 20px;
+            position: absolute;
+            left: 30px;
+        }
+        .left img{
+            height: 68px;
+            filter: invert(100%);
+        }
+        .middle{
+            /* border: 2px solid greenyellow; */
+            display: block;
+            width: 33.3%;
+            margin: 20px auto;
+        }
+        .middle ul{
+            overflow: hidden;
+        }
+        .middle li{
+            float: left;
+            list-style: none;
+            padding: 4px;
+        }
+        .middle li a{
+            text-decoration: none;
+            padding: 4px;
+            margin: 2px;
+            color: white;
+            font-size: 25px;
+        }
+        .right{
+            /* border: 2px solid cyan; */
+            display: inline-block;
+            top: 20px;
+            position: absolute;
+            right: 30px;
+        }
+        .container{
+            /* border: 2px solid red; */
+            margin-top: 150px;
+            width: 80%;
+            margin: 150px auto;
+        }
+        .btn{
+            padding: 3px 23px;
+            margin: 6px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 22px;
+        }
+        input{
+            padding: 8px;
+            width: 60%;
+            text-align: center;
+            margin: 15px auto;
+            display: block;
+            border-radius: 10px;
+            font-size: 22px;
+        }
+        h1{
+            text-align: center;
+            font-size: 42px;
+        }
+        .submit{
+            padding: 8px;
+            width: 60%;
+            text-align: center;
+            margin: 15px auto;
+            display: block;
+            border-radius: 10px;
+            font-size: 22px;
+            background-color: dodgerblue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img src="logo.jpg" alt="">
+        </div>
+        <div class="middle">
+            <Ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contect Us</a></li>
+            </Ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button><button class="btn">E-mail us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Please Enter Your Bio Data</h1>
+        <form action="backend.php">
+            <div>
+                <input type="text" placeholder="Enter Your Name">
+            </div>
+            <div>
+                <input type="number" placeholder="Enter Your number">
+            </div>
+            <div>
+                <input type="email" placeholder="Enter Your email">
+            </div>
+            <div>
+                <input type="password" placeholder="Enter Your password">
+            </div>
+            <div>
+                <input type="datetime" placeholder="Enter Your Date of Birth">
+            </div>
+            <button type="submit" class="submit">
+                submit Now
+            </button>
+        </form>
+    </div>
+</body>
+</html>
